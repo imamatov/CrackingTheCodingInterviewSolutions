@@ -1,0 +1,15 @@
+func isUniqueChars(_ text:String)->Bool{
+    let array=Array(text)
+    for index in 0..<array.count{
+        for j in index ..<  array.count{
+            if(array[index]==array[j]){
+                return false
+            }
+        }
+    }
+    return true
+}
+
+Time complexity O(n2)
+
+
