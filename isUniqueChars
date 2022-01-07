@@ -1,3 +1,20 @@
+#Time Complexity: O(n)
+func isUniqueChars(_ text:String)->Bool{
+    let array=Array(text)
+    var set = Set<Character>()
+    for index in 0..<array.count {
+        set.insert(array[index])
+    }
+    if(set.count==array.count){
+        return true
+    }else{
+        return false
+    }
+}
+
+
+
+#Time complexity O(n2)
 func isUniqueChars(_ text:String)->Bool{
     let array=Array(text)
     for index in 0..<array.count{
@@ -10,6 +27,5 @@ func isUniqueChars(_ text:String)->Bool{
     return true
 }
 
-Time complexity O(n2)
 
 
